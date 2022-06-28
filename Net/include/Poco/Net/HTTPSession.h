@@ -239,33 +239,15 @@ inline Poco::Timespan HTTPSession::getTimeout() const
 }
 
 
-inline void HTTPSession::setConnectTimeout(const Poco::Timespan& timeout)
-{
-	_connectionTimeout = timeout;
-}
-
-
 inline Poco::Timespan HTTPSession::getConnectTimeout() const
 {
 	return _connectionTimeout;
 }
 
 
-inline void HTTPSession::setSendTimeout(const Poco::Timespan& timeout)
-{
-	_sendTimeout = timeout;
-}
-
-
 inline Poco::Timespan HTTPSession::getSendTimeout() const
 {
 	return _sendTimeout;
-}
-
-
-inline void HTTPSession::setReceiveTimeout(const Poco::Timespan& timeout)
-{
-	_receiveTimeout = timeout;
 }
 
 
